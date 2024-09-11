@@ -1,0 +1,24 @@
+{
+    "transparency16": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile2": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAA8AAAAAD//w//DwAAAA8AD/8PAAAA8P8P/w8AAAAAAPD//wAAAP//8A//AAAAAAD/D/8AAAD///AP/wAAAAAA8P//AAAA//8P/w8AAAAPAA//DwAAAPD/D/8PAAAAAAAA8AAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "DVD0"
+    },
+    "tile1": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAA8AAAAAD//w//DwAAAA8AD/8PAAAA8P8P/w8AAAAAAPD//wAAAP//8A//AAAAAAD/D/8AAAD///AP/wAAAAAA8P//AAAA//8P/w8AAAAPAA//DwAAAPD/D/8PAAAAAAAA8AAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "DVD1"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myTiles"
+    }
+}
