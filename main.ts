@@ -19,6 +19,7 @@ info.onCountdownEnd(function () {
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             `, SpriteKind.Projectile)
+        Dart_1.angle = randint(20, 90)
         Dart_2 = darts.create(img`
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
@@ -37,6 +38,7 @@ info.onCountdownEnd(function () {
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             `, SpriteKind.Projectile)
+        Dart_2.angle = randint(20, 90)
         Dart_3 = darts.create(img`
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
@@ -55,6 +57,7 @@ info.onCountdownEnd(function () {
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             `, SpriteKind.Projectile)
+        Dart_3.angle = randint(20, 90)
         Dartlist = sprites.allOfKind(SpriteKind.Projectile)
         Dart_1.setBounceOnWall(true)
         Dart_2.setBounceOnWall(true)
@@ -230,13 +233,21 @@ let mySprite = sprites.create(img`
 controller.moveSprite(mySprite)
 info.startCountdown(10)
 forever(function () {
-    if (Level == 2) {
+    if (Level >= 2) {
         if (Dart_1.y >= 115) {
-            sprites.destroy(Dart_1)
-        } else if (Dart_2.y >= 115) {
-            sprites.destroy(Dart_1)
-        } else if (Dart_3.y >= 115) {
-            sprites.destroy(Dart_1)
+            Dart_1.angle = randint(20, 90)
+            Dart_1.setPosition(0, randint(0, 40))
+            Dart_1.throwDart()
+        }
+        if (Dart_2.y >= 115) {
+            Dart_2.angle = randint(20, 90)
+            Dart_2.setPosition(0, randint(0, 40))
+            Dart_2.throwDart()
+        }
+        if (Dart_3.y >= 115) {
+            Dart_3.angle = randint(20, 90)
+            Dart_3.setPosition(0, randint(0, 40))
+            sprites.destroy(Dart_3)
         }
     }
 })
